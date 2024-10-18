@@ -1,0 +1,318 @@
+The history of Bitcoin is full of curiosities and interesting facts. You can easily search and discover infinite stories over these 15 years.
+I decided to bring some of these facts and events.
+I tried to list them in chronological order, although some facts cannot be dated.
+ 
+1.
+You may have asked yourself several times throughout this book: Who is Satoshi Nakamoto? Satoshi Nakamoto was the pseudonym chosen by the individual or group of individuals who brought together various existing technologies to create Bitcoin. There has been extensive speculation and many theories have been proposed regarding the true identity of this figure. I am not going to get into the debate of the myriads of speculations about who they might be, as there is a wealth of texts, videos, and articles on the subject. What is crucial to recognize is that beyond Satoshi's genius in creating Bitcoin, his most significant accomplishment was arguably his ability to disappear.
+2.
+On August 18, 2008, the domain address www.bitcoin.org was registered. It utilized a service based in Japan known as Anonymous Speech, which permits the anonymous purchase of domain addresses. This choice underscores the creators of Bitcoin's emphasis on privacy.
+3.
+On October 31, 2008, Bitcoin was introduced to the world through a document titled 'Bitcoin: A Peer-to-Peer Electronic Cash System'. Authored by an individual or group using the pseudonym Satoshi Nakamoto (email: satoshin@gmx.com), the whitepaper was shared on the cryptography mailing list hosted by metzdowd.com, a platform renowned among cypherpunk groups for its engagement with cryptographic innovations. This nine-page academic-style paper, complete with an abstract, introduction, and conclusion, was more than just a proposal, it was the beginning of the Bitcoin project which is based on cryptographic principles and an alternative trust mechanism that does not require trusted third parties.
+https://bitcoin.org/bitcoin.pdf 
+4.
+It is not known exactly when Satoshi began working on the Bitcoin project, but on January 3, 2009, the genesis block of Bitcoin was mined. Along with the first block (block 0), the first bitcoins were created: 50 more precisely, which were paid to the block miner, who in this case was Satoshi.
+However, the Genesis block contains some curiosities. The address to which the 50 bitcoins from the coinbase transaction were sent is not part of the blockchain. It is unknown whether it was on purpose or a mistake, but Satoshi decided not to add the coinbase transaction from the genesis block to the global transaction database. Thus, all the nodes in the network would reject the block. Therefore, the bitcoins that are at this address can never be used.
+Along with the block's only transaction (coinbase transaction), Satoshi included a message in the block: "The Times 03/Jan/2009 Chancellor on brink of second bailout for banks".
+Satoshi never explained this. However, it is believed that one of Satoshi's aims in creating Bitcoin might have been to help people from having to hand money over to a bank as an alternative to stashing cash under their mattresses. In 2009, the Great Recession was in full swing. Some people had gone to their bank only to find their money was gone. Other people found their pensions had gone the same way. Many think it is no coincidence that Satoshi chose that particular headline to write into the Genesis Block. This was supposed to be the beginning of the end of people relying on banks so much that the government had to rescue them from their own mistakes using taxpayers' money.
+Another theory is that the inclusion of a headline from that day proves that the hash could not have been generated before that day. 
+It is also curious that the second Bitcoin block was mined on January 9, a full six days after the first one. Typically, Bitcoin blocks are designed to be mined every 10 minutes. This delay for the second block could be attributed to various reasons. The algorithm responsible for adjusting the mining difficulty to maintain the 10-minute interval only activates approximately every two weeks, so Satoshi may have deliberately waited to mine more blocks because he waited to see if other people joined the network. He didn't want to premise it all to himself.
+Another theory says that as he was the only one mining at that time, and still needed to make adjustments to the code and use the computer daily, there was little time available for his computer to be dedicated to mining, which took longer.
+Another theory is that Satoshi's original Bitcoin version would only start mining if it had at least one more peer so it is possible that Satoshi's node was running when publishing the software but only started mining when a second peer joined the network. Bitcoin 0.1 was only announced to the mailing list on the 8th of January at 19:27 UTC, and then the second node would have only appeared on the network once someone else's interest was piqued enough to download and run the software. Block 1 (the second block) is timestamped 2009-01-09 2:54 UTC, 7 hours and 27 minutes after the email announcement.
+However, a more intriguing theory suggests that Satoshi deliberately chose to mirror the six days it took for God to create the world, as described in the Book of Genesis.
+https://mempool.space/tx/4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b 
+https://www.thetimes03jan2009.com/ 
+ 
+5.
+Bitcoin v0.1, the first software version, was released on January 8, 2009. From that moment on, the code became available for viewing, downloading, and for anyone to run, in addition to receiving feedback and suggestions for adjustments.
+https://www.mail-archive.com/cryptography@metzdowd.com/msg10142.html 
+6.
+On January 11, 2009, Satoshi's email announcing the first version of Bitcoin was responded to by Hal Finney, congratulating him and saying that he would soon run a node.
+In the same answer, Hal already speculates on the value that Bitcoin could obtain if it became the world's reserve asset (despite having mentioned "dominant payment system"): "Then the total value of the currency should be equal to the total value of all the wealth in the world. Current estimates of total worldwide household wealth that I have found range from $100 trillion to $300 trillion. With 20 million coins, that gives each coin a value of about $10 million."
+https://www.mail-archive.com/cryptography@metzdowd.com/msg10152.html 
+7.
+On January 12, 2009, the first recognized Bitcoin transaction occurred, marking a significant milestone for the Bitcoin blockchain. Satoshi Nakamoto sent 10 BTC to Hal Finney, demonstrating the system's ability to facilitate a secure, peer-to-peer, and decentralized transaction. This historic transfer was recorded in block number 170.
+https://mempool.space/block/00000000d1145790a8694403d4063f323d499e655c83426834d4ce2f8dd4a2ee 
+8.
+October 5, 2009: The 'New Liberty Standard' website published the first exchange rate between Bitcoin and the US dollar, offering a service for buying or selling BTC using PayPal. The initial rate was astonishingly set at 1,309.03 BTC to 1 USD, effectively valuing each Bitcoin at approximately $0.000764. Curiously, the BTC fiat price set by New Liberty Standard was determined not by buying or selling trading activity, but by the price of
+electricity and the website owner's personal BTC mining output: "Our exchange rate is calculated by dividing $1.00 by the average amount of electricity required to run a computer with high CPU for a year, 1331.5 kWh, multiplied by the average residential cost of electricity in the United States for the previous year, $0.1136, divided by 12 months divided by the number of bitcoins generated by my computer over the past 30 days."
+https://newlibertystandard.io/exchange 
+https://web.archive.org/web/20091229132610/http://newlibertystandard.wetpaint.com/page/Exchange+Rate 
+9.
+On October 12, 2009, Finnish developer Martti 'Sirius' Malmi, one of Bitcoin's first developers, made the first recorded BTC to fiat currency exchange. He sold 5,050 BTC for US$5.02 using PayPal through the New Liberty Standard exchange service. This sale valued each Bitcoin at approximately US$0.000994. The transaction is included in block number 24,835. This was the first time Bitcoin was exchanged for a government-issued currency.
+https://twitter.com/marttimalmi/status/423455561703624704 
+10. 
+Satoshi would like to make some of the features of version 0.2 available on a forum to collect responses and feedback. Therefore, after some email exchanges with Martti Malmi debating which platform to use, they decided on https://bitcoin.org/smf  on 20 November 2009.
+The location of the forum migrated to https://forum.bitcoin.org  later.
+https://mmalmi.github.io/satoshi/ 
+11.
+December 16, 2009: Bitcoin Version 0.2 is released just a few months after the initial release. This update introduced a Linux version. This release was achieved with the help of Martti Malmi (nickname Sirius), one of Bitcoin's earliest developers and contributors. 
+https://www.bitcoin.com/satoshi-archive/forum/bitcoin-forum/21/#selection-25.0-25.40 
+https://www.bitcoin.com/satoshi-archive/emails/bitcoin-list/11/ 
+12.
+Although block difficulty is adjusted every 2016 block, the first difficulty adjustment occurred at block 32,256 on December 30, 2009. Before that, the average time to mine a block was over 10 minutes (between block 1 and block 32,256, the average block time was 16 minutes), and the retarget adjustment algorithm only works if block times are under 10 minutes.
+https://bitcointalk.org/index.php?topic=5363163.msg58058198#msg58058198 
+ 
+13.
+On January 15, 2010, dwdollar (Dustin Dollar) announced on the 'Bitcoin Forum' that he had begun creating an alternative to the New Liberty Standard (NLS) exchange service. He said he was building an exchange that would be a real market where people could buy and sell Bitcoins with each other, reflecting real trading between market participants, rather than relying on calculations based on the electricity cost for mining and other factors.
+https://bitcointalk.org/index.php?topic=20.0 
+14.
+On March 17, 2010, dwdollar delivered what he promised: Bitcoin Market, the first exchange with BTC buy and sell orders went live at www.bitcoinmarket.com. But recurring problems with fraud led to the payment service PayPal blacklisting the site on June 4, 2011.
+https://www.guinnessworldrecords.com/world-records/696258-first-cryptocurrency-exchange 
+15.
+On May 18, 2010, one of the most folkloric and remembered facts happened within the Bitcoin community: Laszlo Hanyecz, a programmer in Jacksonville, Florida, offered to pay 10,000 BTC for someone to deliver two pizzas to his house. He created the following thread on the 'Bitcoin Forum' titled 'Pizza for Bitcoin?':
+"I'd like to buy a couple of large pizzas for 10,000 bitcoins. I hope to have some leftovers for the next day because I enjoy nibbling on pizza later. You can either make the pizzas yourself and bring them to my house, or you can order them for me from a delivery place. What I'm looking for is to exchange bitcoins for food delivery without having to order or prepare it myself. It's like ordering a 'breakfast platter' at a hotel where they bring you something to eat and you're happy!"
+I like things like onions, peppers, sausage, mushrooms, tomatoes, pepperoni, etc. just standard stuff no weird fish topping or anything like that.  I also like regular cheese pizzas which may be cheaper to prepare or otherwise acquire.
+If you're interested please let me know and we can work out a deal.
+Thanks,
+Laszlo"
+Laszlo reported that on May 22, 2010, he had successfully traded 10,000 BTC for two pizzas. Jeremy Sturdivant accepted the BTC and ordered the pizzas from Papa John's for delivery to Laszlo's home, where he received them the same day.
+And there's one more curiosity in this story: If it was Papa John's or Domino? Not even Jeremy himself remembers.
+Excerpt from an interview with him:
+"Q. This Bitcoin wiki page says Laszlo bought two Domino pizzas from you, but the pictures are of Papa John's, what do you remember?
+A. I'm starting to regret not keeping chat logs of the event, as I clearly remember Domino's pizza (right down to their particular web interface), but the pictures show Papa John's."
+https://bitcointalk.org/index.php?topic=137.0 
+https://web.archive.org/web/20120506074339/http://heliacal.net/~solar/bitcoin/pizza/ 
+https://www.bitcoinwhoswho.com/blog/2018/05/08/the-first-bitcoin-transaction-was-it-for-two-dominos-or-papajohns-pizza/ 
+16.
+You may be wondering how Laszlo managed to collect 10 thousand bitcoins when, at the time, almost no purchase and sale transactions were being made, and most were obtained through mining. The answer is mining with graphics cards. Until then, bitcoin mining was performed using traditional computer processors (CPUs). However, Laszlo discovered a method to mine using the computational capacity of video processors (GPUs). He shared this innovation on the Bitcointalk forum on May 10, 201, just a few days before posting about the iconic pizza. This suggests that he was already mining with significantly greater capacity than other miners and, consequently, generating more blocks and receiving more reward bitcoins.
+Years later, in an interview, Laszlo revealed that he received an email from Satoshi asking him to be careful with such mining.
+Satoshi's concern was with the decentralization of the network in the early years. He wanted anyone to be able to be part of the network and mine with their laptop.
+After apologizing, Laszlo received a response telling him to just not encourage it and let the post die.
+Later, Satoshi would have shared with Laszlo the fact that he had already developed mining for GPU before, precisely to have a defense mechanism in case a 51% attack occurred. But he would have agreed that Laszlo's code was more optimized for Bitcoin.
+https://bitcointalk.org/index.php?topic=133.0 
+https://www.bitcoin.com/satoshi-archive/emails/laszlo-hanec/1/ 
+https://hashrateindex.com/blog/bitcoin-pizza-day-gpu-mining/ 
+https://cointelegraph.com/news/satoshi-invented-gpu-mining-to-defend-the-network-says-early-dev 
+17.
+On May 28, 2010, Gavin Andresen, one of the early Bitcoin adopters, created a Bitcoin faucet in an attempt to help the Bitcoin project succeed. This site allowed anyone to simply enter their Bitcoin address, solve a captcha, and receive 5 bitcoins. He explained that this would provide a way for people to obtain bitcoins without waiting for their node to mine a block. Initially, he funded the faucet with 1,100 bitcoins, and additional donations were made by others. Ultimately, the faucet distributed 19,700 BTC before it closed in 2012.
+https://bitcointalk.org/index.php?topic=183.0 
+https://web.archive.org/web/20100703032414/ http://freebitcoins.appspot.com/ 
+18.
+On July 17, 2010, Mt. Gox launched as a Bitcoin exchange, originally developed by programmer Jed McCaleb. Initially designed as a platform for trading 'Magic: The Gathering Online' cards, the site pivoted to support the growing interest in Bitcoin, becoming the largest Bitcoin exchange by market share and handling about 70% of all transactions in 2013.
+The name "Mt. Gox" stands for "Magic: The Gathering Online Exchange," reflecting its origins.
+On March 6, 2011, McCaleb sold Mt. Gox to Tibanne, a company owned by Mark Karpelès in Japan. Despite its significant market presence, Mt. Gox collapsed in February 2014 due to security and management issues.
+https://www.wired.com/2014/03/bitcoin-exchange/ 
+https://www.investopedia.com/terms/m/mt-gox.asp 
+19.
+On August 9th, 2010, the first big Bitcoin loss occurred. A Bitcointalk forum member, Stone Man, posted on August 10th that he couldn't find 8,999 of his bitcoins. This loss was due to a misunderstanding of how UTXO and the wallet mechanism he was using worked. He attempted to send himself 1 out of the 9,000 bitcoins he had, but he didn't indicate the change address. As a result, the wallet sent the 'change' (8,999 bitcoins) to an address for which he did not have the private keys.
+https://bitcointalk.org/index.php?topic=782.0 
+ 
+20.
+The Bitcoin Network block 74638, mined on August 15th, 2010, holds a strange record, noted and reported at Bitcointalk Forum by Jeff Garzik. A bug in the Bitcoin code at that time allowed someone to exploit it and generate a massive amount of Bitcoin (184,467,440,737.09 BTCs). This amount was split between two addresses.
+Luckily, the situation was identified and addressed quickly. Bitcoin developers, including Satoshi Nakamoto, Gavin Andresen, Jeff Garzik, and Theymos, worked together to fix the bug. This incident, later known as the "value overflow incident", highlighted a vulnerability in how Bitcoin transactions were checked. The code wasn't equipped to handle large outputs that overflowed when summed together before being included in a block.
+The response was quick. Within five hours, upgrades to the Bitcoin client were released. Additionally, users quickly adopted new consensus rules that rejected transactions with overflowing output values. This was implemented through a soft fork of the blockchain, a change in the protocol that didn't require a complete split in the network.
+https://bitcointalk.org/index.php?topic=822.0 
+https://bitcointalk.org/index.php?topic=823.0 
+21.
+The initial Bitcoin logo, released by Satoshi in January 2009 alongside the early version of the Bitcoin wallet client, appeared at the top of the application. It was depicted as a gold coin featuring the letters "B" and "C" in the center.
+On February 5, 2010, NewLibertyStandard proposed adopting the Thai Baht currency symbol, ₿, along with the three-letter currency code BTC. Subsequently, on February 24, 2010, Satoshi Nakamoto announced a redesign of the logo, likely incorporating some of these suggestions. The revised logo maintained the "gold coin" appearance but replaced the initials 'B' and 'C' with a central ₿. He also sought feedback on this change.
+Finally, on November 1, 2010, a member named Bit Boy posted a new design that was widely approved and has been adopted as the standard ever since. The "gold coin" was replaced with a plain orange circle, and the "₿" logo was tilted 14% clockwise, creating a cleaner and more minimalist style.
+https://bitcointalk.org/index.php?topic=41.0 
+https://web.archive.org/web/20130524055823/https://bitcointalk.org/index.php?topic=64.0 
+https://web.archive.org/web/20140426192534/https://bitcointalk.org/index.php?topic=1631.0 
+22.
+On November 8th, 2010, the term 'shitcoin' was first reported about altcoins. The member Ribuck said that if Bitcoin took off, several imitators would appear selling their copies of Bitcoin, such as gitcoin, nitcoin, witcoin, titcoin, and shitcoin.
+https://bitcointalk.org/index.php?topic=1647.msg20646#msg20646 
+23.
+The term 'satoshi' was proposed as the name for a subdivision of a Bitcoin unit on November 15, 2010, by the member Ribuck. Another proposed name was 'Austrian,' referencing the Austrian School of Economics. The initial proposal did not gain much support, but on February 10, 2011, it was revisited in another discussion about the future need for Bitcoin's divisibility. Finally, the term was accepted by the community after user marcus_of_augustus asked, '100 million satoshis = 1 bitcoin. Are we agreed?' in a third discussion.
+https://bitcointalk.org/index.php?topic=369.msg22160#msg22160 
+https://bitcointalk.org/index.php?topic=3311.msg46648#msg46648 
+https://bitcointalk.org/index.php?topic=3574.msg50647#msg50647 
+24.
+On 27th November 2010, the Bitcointalk forum member Slush posted that he had designed the first Bitcoin Mining Pool. Before this development, individual miners using CPU-based systems faced intense competition, particularly from those using GPU-enabled computers. The post highlighted the challenges faced by CPU miners, who often struggled to compete with more powerful GPU miners for block rewards.
+The member slush proposed a solution to pool the computational power of multiple CPUs together. This approach aimed to increase the chances of finding a block and thereby receiving a proportional reward. By joining the mining pool, CPU miners could enjoy more consistent rewards compared to solo mining, where finding a block could take weeks or even months.
+https://bitcointalk.org/index.php?topic=1976.0 
+25.
+In early December 2010, donations to Wikileaks via payment methods like PayPal, Mastercard, and VISA were blocked due to the United States diplomatic cables leaks. The Bitcoin community suggested using peer-to-peer transactions to support Wikileaks financially. On December 5, 2010, Satoshi cautioned against Wikileaks using Bitcoin, stating that the project needed gradual growth to strengthen the software. He explained that Bitcoin was still a small beta community and that trying to use it could bring unwanted attention that might harm Bitcoin's development.
+https://bitcointalk.org/index.php?topic=1735.msg26999#msg26999 
+26.
+On 12th December 2010, Satoshi Nakamoto made his last post on the Bitcoin Forum and later edited that post the next day (13th December). He did not explain the reasons, but it is believed that the fact that Wikileaks had started accepting donations in bitcoins would draw unwanted attention to the project at that time.
+https://bitcointalk.org/index.php?topic=2228.0 
+27.
+Silk Road was launched in February 2011 by Ross Ulbricht, who operated under the pseudonym "Dread Pirate Roberts." Ulbricht was the primary developer behind the site, although he received assistance from a few others known by the pseudonyms Variety Jones and Smedley for maintaining and promoting the platform. Silk Road was designed as an online black market, primarily used for the sale of illegal drugs, but it also facilitated transactions for other illicit goods and services. The site operated on the Tor network, which provided anonymity to its users, and transactions were conducted using Bitcoin to further obscure the identities of buyers and sellers. Despite its illicit nature, the Silk Road was intended to be a free marketplace where anyone could buy and sell anything they wanted.
+Nick Bilton - American Kingpin: The Epic Hunt for the Criminal Mastermind Behind the Silk Road.
+https://en.wikipedia.org/wiki/Silk_Road_(marketplace) 
+https://bitcointalk.org/index.php?topic=3984.msg57080#msg57080 
+28.
+Despite no longer posting anything on the forum, Satoshi continued to communicate via email with some of the project's developers. On April 23, 2011, Mike Hearn declared that he had received the last email from Satoshi, where he declared that he was dedicating himself to other projects and that with Gavin Andresen and other developers involved, Bitcoin was in good hands. Gavin later stated that the last email he received from Satoshi was on April 26, 2011, in which he again said that he was dedicating himself to new projects, and asked that the community start referring to Bitcoin as an open-source project developed by the community, and not by a mysterious figure.
+In his response, Gavin commented that he had accepted an invitation from a government-funded company to speak about Bitcoin at an annual conference on emerging technologies they were hosting and that that year's theme would be "Mobility of Money". The fact that Satoshi never responded demonstrates once again that his goal was for Bitcoin to be seen as an Open Source project, developed and updated by the community.
+https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/16/ 
+https://gavinandresen.ninja/eleven-years-ago-today 
+29.
+On June 24th, 2011, the forum migrated from https://forum.bitcoin.org  to https://bitcointalk.org. Later, the 'forum' link was simply removed, further distancing BitcoinTalk from the official www.bitcoin.org website. The forum was originally located at bitcoin.org/smf, then forum.bitcoin.org, and finally bitcointalk.org. Jeff Garzik is credited with inventing the name 'BitcoinTalk,' and he bought the www.bitcointalk.org domain. The forum, which had just changed its name, was at the time, and continued to be, the primary forum for Bitcoin enthusiasts and developers to discuss and where most of the announcements were made over the years. It was also a reference for information and facts for this book.
+https://bitcointalk.org/index.php?topic=971543.msg10607781#msg10607781 
+30.
+The first Bitcoin tattoo was publicly revealed on July 11, 2011. The artwork was created in a studio in Las Vegas and consists of a gold coin with the Bitcoin symbol. You can research where on the body it was tattooed. Although this was the first publicly exposed tattoo, it's worth noting that another person had tattooed something related to Bitcoin a few days earlier, but only shared it with a few people.
+https://bitcointalk.org/index.php?topic=27958.0 
+31.
+On August 20th, 2011, the world's first Bitcoin Conference & Expo took place in New York City. The event brought together fewer than 100 Bitcoin enthusiasts, a modest yet passionate group. It was organized by the Bitcoin Center NYC, which has been a hub for discussions and activities related to Bitcoin. Some of the speakers included Gavin Andresen, Jeff Garzik, Stefan Thomas, and Bruce Wagner, who convinced a restaurant in the area to accept payments in Bitcoin. That night, a group went there for dinner, and after everyone had eaten, Wagner asked the members of the group to combine all their payments into a group payment. This was the owner's first time using the system, and everyone there wanted to make it as easy as possible. The experiment didn't work well until Yifu Guo offered to pay for the group with an immediate voucher that he could e-mail from his account with Mt. Gox to the owner of the restaurant. Then everyone else could reimburse him through an Android-based Bitcoin wallet.
+https://spectrum.ieee.org/the-worlds-first-bitcoin-conference 
+32.
+Charlie Lee announced the creation of Litecoin, a fork of Bitcoin. Since Bitcoin's source code is open, anyone can copy it, change some parameters, and run their version. Although it was not the first project of its kind, Litecoin aimed to be digital silver, with Bitcoin as digital gold. The main change was the block mining time of 2.5 minutes, allowing Litecoin to be transacted faster, though it did not guarantee the same security as Bitcoin, according to the founder. The project went live and began running on October 13, 2011.
+https://bitcointalk.org/index.php?topic=47417.0 
+https://github.com/litecoin-project/litecoin 
+33.
+A developer created an online casino called Bitcoin Casino and claimed that the site was generating revenue in BTCs, but he wanted to sell the project due to concerns about legal issues. Erik Voorhees bought the project, renamed it SatoshiDice, and announced the blockchain-based betting game on BitcoinTalk on April 24th, 2012.
+SatoshiDice was a simple online dice game that operated on the Bitcoin blockchain. Players bet Bitcoin on the outcome of a dice roll, with different probabilities and payouts available based on the chosen numbers. The game leveraged the transparency and security of blockchain technology to ensure fairness. The game functioned by having players send Bitcoin to a specific address corresponding to their desired bet. The outcome of the dice roll was determined by a cryptographic hash function, ensuring that the results were provably fair and could not be tampered with.
+Rumor has it that within a few weeks, the site was already responsible for at least half of all BTC network transactions. In July 2013, Erik Voorhees sold SatoshiDice for 126,315 BTC (worth around $11.5 million at the time).
+https://www.reddit.com/r/Bitcoin/comments/segz0/anyone_want_to_run_my_bitcoin_casino/ 
+https://bitcointalk.org/index.php?topic=77870.0 
+https://bitcoinmagazine.com/markets/satoshidice-sold-12-4-million 
+34.
+Bitcoin Magazine was co-founded by Mihai Alisie and Vitalik Buterin. The magazine initially went on sale on May 1, 2012, from its base in South Korea. It was one of the first printed publications exclusively devoted to Bitcoin. Subscribers began to receive the physical copies a few weeks later. In late 2014, Bitcoin Magazine was acquired by BTC Media LLC, an American company based in Nashville, Tennessee.
+https://bitcoinmagazine.com/ 
+https://en.wikipedia.org/wiki/Bitcoin_Magazine 
+35.
+Coinbase officially launched its first product, a simple Bitcoin buying and selling service, in October 2012. The platform had a user-friendly interface, which attracted users who were interested in Bitcoin but found other methods too complex.
+The co-founders Brian Armstrong, a former engineer at Airbnb, and Fred Ehrsam, who had experience as a trader at Goldman Sachs met through a Bitcoin subreddit forum.
+Coinbase was listed on the NASDAQ stock exchange on April 14, 2021, under the ticker symbol COIN.
+And by the way, if you read the book before getting here, you know what "coinbase" means.
+https://en.wikipedia.org/wiki/Coinbase 
+36.
+The Bitcoin Foundation was launched in September 2012 by Gavin Andresen, Jon Matonis, Patrick Murck, Charlie Shrem, and Peter Vessenes as a nonprofit organization. The foundation's goals included supporting Bitcoin's core development, educating the public about Bitcoin's benefits, and acting with regulatory bodies.
+The Membership fee structure in October 2012 was:
+Individual Memberships:
+Lifetime: 2.7 BTC
+Annual: 0.27 BTC
+Industry Memberships:
+Platinum: 1088.5 BTC
+Gold: 272.1 BTC
+Silver: Starts at 10.9 BTC
+https://www.bitcoinfoundation.org/ 
+https://bitcointalk.org/index.php?topic=113400.0 
+https://web.archive.org/web/20130702214605/https://bitcoinfoundation.org/support 
+37.
+On November 28th, 2012, the first Bitcoin Halving event occurred. For the first time, the rewards for mining a Bitcoin block were reduced by half, dropping from 50 BTC to 25 BTC. This event occurs approximately every four years (precisely every 210,000 blocks).
+Some interesting facts about this event include:
+The total number of Bitcoins in circulation had just hit 10.5 million at that point, which is half of all the Bitcoins that will ever be mined.
+The price of one BTC at the time was around USD 12.
+The block was mined by the Braiins mining pool (formerly Slush).
+It contained 457 transactions.
+The block generated 25 BTC plus 13.6 BTC in fees, totaling 38.6 BTC in rewards for the miner.
+https://mempool.space/pt/block/000000000000048b95347e83192f69cf0366076336c639f9b7228e9ba171342e 
+https://www.theverge.com/2012/11/28/3701434/total-number-of-bitcoins-hits-10-5-million-production-halves-to-stop 
+38.
+On January 30th, 2013, Jeff Garzik posted in his blog that he had just received a package from China: an ASIC (Application-Specific Integrated Circuit) used for mining Bitcoins. The next day, Garzik shared his mining results, stating, "After 20 hours of mining, the unconfirmed + confirmed rewards equal 14.98832170 BTC. Note that Slush's pool was very lucky recently, in addition to some blocks with abnormally high TX fee income, so that number skews much higher than expected."
+https://x.com/jgarzik/status/296709252351926273 
+https://garzikrants.blogspot.com/2013/01/avalon-asic-miner-review.html 
+39.
+At the end of March 11, 2013, a Bitcoin miner running version 0.8 created a large block (at a height of 225,430) that was incompatible with earlier versions of Bitcoin. This caused a fork in the Bitcoin network and resulted in two separate blockchains. In the early hours of the following day, the developer community identified the problem: on February 19th of that same year, version 0.8 of the code had been released. This version included a change in the database system that allowed a greater volume of transactions in each block, which the previous version 0.7 did not support. With the recent increase in transaction volume on the Bitcoin network, some blocks exceeded this limit and were rejected by nodes running version 0.7 but accepted by version 0.8, creating two incompatible blockchains.
+Pieter Wuille announced that after discussions, the community recognized that the least risky path was to continue with the old chain. The correction plan included several actions: miners needed to stop using version 0.8 and return to version 0.7, and nodes that had updated to the latest version needed to revert to the previous version. Another recommendation was for merchants to stop accepting Bitcoin payments temporarily to avoid the risk of accepting transactions on the new chain, which would be discarded if the plan succeeded.
+The plan worked, and 24 blocks later, the old chain had become the longest chain again.
+https://bitcointalk.org/index.php?topic=145184.0 
+https://bitcointalk.org/index.php?topic=152030.0 
+https://en.bitcoin.it/wiki/BIP_0050  
+40.
+On March 19, 2013, Hal Finney wrote a post talking about his journey with Bitcoin over the last 4 years. He had been diagnosed with ALS (Amyotrophic Lateral Sclerosis) 4 years earlier and at that point, he was already completely paralyzed. The post, as well as all other writings, were made using a commercial eye tracker system.
+https://bitcointalk.org/index.php?topic=155054.0 
+41.
+On March 28, 2013, the market value of Bitcoin surpassed the 1 billion dollar mark. The price had almost doubled in the last 10 days. One of the explanations was the events taking place in Cyprus. On March 18 of that year, following an escalation of the economic crisis, Cyprus closed all banks due to concerns regarding a likely bank run with a reopening planned for after the scheduled 25 March holiday. This fact would have encouraged not only the inhabitants of Cyprus but also other people in the world concerned about the possibility of a totalitarian government unilaterally blocking their funds to look for a sovereign alternative to store their assets.
+https://en.wikipedia.org/wiki/2012%E2%80%932013_Cypriot_financial_crisis 
+42.
+On April 18, 2013, Adam Back, the inventor of hash cash, presented himself at Bitcoin talks after, according to him, "24 years of internet use, 18 years of Linux, 30 years of programming". His last activity on the forum was on June 17, 2023.
+https://bitcointalk.org/index.php?topic=15672.msg1873483#msg1873483 
+43.
+On October 1st, 2013, the Federal Bureau of Investigation arrested Ross Ulbricht at the Glen Park branch of the San Francisco Public Library, accusing him of being the creator of Silk Road. To prevent Ulbricht from encrypting or deleting files on his laptop during the arrest, two agents pretended to be lovers to distract him. When they had sufficiently diverted his attention, they quickly moved in to arrest him. Meanwhile, a third agent grabbed the laptop and handed it to another agent, who then inserted a flash drive into one of the laptop's USB ports, using software to copy key files.
+The FBI seized 144,336 bitcoins from a shared digital wallet on Ulbricht's laptop. These were sold in a series of auctions, generating proceeds worth $48.2 million.
+Ulbricht was found guilty of each of the seven charges he faced on February 5, 2015, following a four-week jury trial. On May 29, 2015, he was sentenced in Manhattan federal court to life in prison.
+https://en.wikipedia.org/wiki/Ross_Ulbricht 
+https://www.justice.gov/usao-sdny/pr/acting-manhattan-us-attorney-announces-forfeiture-48-million-sale-silk-road-bitcoins 
+https://www.justice.gov/usao-sdny/pr/ross-ulbricht-aka-dread-pirate-roberts-sentenced-manhattan-federal-court-life-prison 
+44.
+On October 29th, 2013, the first known publicly available Bitcoin ATM (Automatic Teller Machine) was installed at Waves Coffee House in Vancouver, Canada. The machine was built by a Nevada company called Robocoin. It scans your palm and allows you to buy bitcoins with cash or sell bitcoins for cash.
+https://web.archive.org/web/20131101202753/https://mashable.com/2013/10/30/bitcoin-atm-2/ 
+https://web.archive.org/web/20200905213625/https://www.wired.com/2013/10/robocoin-here 
+45.
+Have you ever heard any Bitcoiners talking about HODL? This expression was coined on December 18, 2013, when a user named GameKyuubi made a post on the popular BitcoinTalk forum. He meant to write "I AM HOLDING" to show he wasn't going to sell his coins even though the price had risen dramatically in the last weeks. Instead, he mistyped it and wrote "I AM HODLING." In the post, he mentioned that he had consumed whiskey, although the bottle said "whisky" (without the e). From that moment, Bitcoiners stopped 'holding' their coins and began 'hodling' them.
+https://bitcointalk.org/index.php?topic=375643.0 
+46.
+The complete story of the Mt. Gox exchange could fill a book. Launched in 2010, it was handling over 70% of all Bitcoin (BTC) buys and sells worldwide by early 2014 when it abruptly ceased operations amid revelations of its involvement in the loss or theft of hundreds of thousands of bitcoins.
+On February 7, 2014, Mt. Gox halted all Bitcoin withdrawals. A press release issued on February 10 stated that the issue was due to transaction malleability. According to Gavin Andresen, this feature has been known since 2011. Therefore, any company dealing with Bitcoin transactions and coding their wallet software should have responsibly prepared for this possibility by including a way to validate transaction IDs. Failing to do so could result in Bitcoin loss. Following this incident, all major Bitcoin exchanges suspended withdrawals as well.
+By February 17, all other exchanges had returned to normal operations, except for Mt. Gox, which continued to halt withdrawals. On February 20, after a protest by two Bitcoin enthusiasts outside the building housing the Mt. Gox headquarters in Tokyo citing "security concerns," Mt. Gox moved its offices to a different location in Shibuya.
+On February 24, Mt. Gox suspended all trading, and its website went offline, returning a blank page. A leaked alleged internal document claimed that the company was insolvent and had lost almost 750,000 BTC in customer funds and another 100,000 BTC of its own.
+On February 28, Mt. Gox filed in Tokyo for a form of bankruptcy protection from creditors called minji saisei (civil rehabilitation) to allow courts to seek a buyer.
+The Mt. Gox saga continues as of this writing when some of the customers' bitcoins have been paid out.
+https://en.wikipedia.org/wiki/Mt._Gox 
+https://bitcointalk.org/index.php?topic=4412667.0 
+https://www.mtgox.com/img/pdf/20140521_announce.pdf 
+https://www.coindesk.com/business/2024/07/05/mt-gox-begins-repayments-in-bitcoin-and-bitcoin-cash/ 
+ 
+47.
+On March 6th, 2014, Newsweek Magazine posted an online article titled "The Face Behind Bitcoin," written by Leah McGrath Goodman. It claimed, after months of investigation, to have discovered the identity of Satoshi Nakamoto.
+Dorian Satoshi Nakamoto strongly denied being the creator of Bitcoin. In a public statement, he asserted that he had never heard of Bitcoin until his son mentioned it after being contacted by a reporter. He also clarified that he had no involvement in the development of Bitcoin and had never worked on cryptography or similar projects. Nakamoto emphasized that the misidentification had caused him significant stress and disruption to his life.
+https://www.newsweek.com/2014/03/14/face-behind-bitcoin-247957.html 
+48.
+On December 11th, 2014, Microsoft started accepting payments made using bitcoins. Bitcoins could be used to add funds to Microsoft accounts, which could then be spent on a variety of Microsoft services such as games and videos on Xbox game consoles, apps and services for Windows phones, or to buy Microsoft software.
+https://money.cnn.com/2014/12/11/technology/microsoft-bitcoin/index.html 
+49.
+On May 5th, 2015, the Bitcoin Investment Trust's GBTC by Grayscale began trading on public markets. The trust was originally launched in 2013 but was only available to institutional and accredited investors.
+https://etfs.grayscale.com/gbtc 
+https://www.investopedia.com/news/why-buy-expensive-bitcoin-etf-instead-actual-bitcoin/ 
+50.
+On 12th February 2017, Christian Langalis, a 22-year-old guy held up a "Buy Bitcoin" sign during Fed chair while Janet Yellen was speaking to the House Financial Services Committee. Langalis was promptly escorted out of the room. He later received around 7 BTCs in donations. 
+On April 25th, 2024, Langalis sold his iconic sign in an auction. The Scarce City auction for the sign took place at PubKey, a Bitcoin-themed bar in New York City, and the sign was sold for 16 BTCs.
+https://www.youtube.com/watch?v=uRmn0nVWA68 
+https://mempool.space/pt/address/1GwtZF9QFKWNqCRHLx1Y9adGcrhQSUnNfY  
+https://scarce.city/auctions/buy-bitcoin 
+51.
+On March 29, 2017, posts were made from Hal Finney's account on the BitcoinTalk forum. However, Hal Finney, one of the earliest adopters of Bitcoin, passed away on August 28, 2014. Therefore, the posts were made by someone who had hacked his account.
+Following the breach, the forum administrator, theymos, promptly locked Finney's account to prevent further unauthorized activity. Theymos explained that he had kept the account unlocked because he thought Finney's family members might want to look at his private messages or other information. However, given the circumstances, it became clear that the account had almost certainly been compromised. The hacker likely gained access via an email password reset, indicating that Finney's email account was also probably compromised.
+https://bitcointalk.org/index.php?topic=1847311.0 
+52.
+On 20th June 2017, India decided to regulate Bitcoin. After investigations by the Finance Ministry's Inter-Disciplinary Committee, the government ruled in favor of regulation. Indian Bitcoin exchanges like Zebpay and Coinsecure had self-regulated with strict KYC and anti-money laundering systems. Indian exchanges had been processing around 11% of Bitcoin-to-USD trades.
+https://cointelegraph.com/news/suddenly-bitcoin-to-be-officially-legal-in-india 
+53.
+On 1st August 2017, the Bitcoin Cash fork happened. Since Bitcoin's blockchain has a limit on the size of blocks (1 MB per block), there is a limited number of transactions it can process per second. This led to slower transaction times and high fees during peak usage periods. Some in the community believed increasing the block size would allow for faster and cheaper transactions. They proposed raising the limit from 1MB to 8 MB. But for the majority of the Bitcoin community, larger blocks would make it harder for individuals to run nodes on the network, potentially centralizing it. Since no agreement could be reached, a hard fork occurred. This means the Bitcoin blockchain diverged into two separate branches:
+Bitcoin (BTC): The original chain remained with the 1MB block size limit.
+Bitcoin Cash (BCH): The new chain adopted the 8MB block size. As a result of the fork, anyone holding Bitcoin at the time received the same amount of Bitcoin Cash.
+Gavin Andresen, one of the early developers of Bitcoin who took over as the lead developer of Bitcoin Core after Satoshi Nakamoto stepped back, was a strong advocate for increasing the block size limit and supported Bitcoin Cash. Other supporters of Bitcoin Cash included Roger Ver, Jihan Wu (Co-founder of Bitmain), Craig Wright, and Calvin Ayre.
+On the other hand, prominent supporters of Bitcoin, who favored maintaining the smaller block size, included Adam Back, Gregory Maxwell, Wladimir van der Laan, and Pieter Wuille.
+https://bitcointalk.org/index.php?topic=2040221.0 
+https://en.wikipedia.org/wiki/Bitcoin_Cash 
+54.
+On 25 January 2018, George Soros referred to Bitcoin as a bubble.
+https://web.archive.org/web/20180414012940/https://www.theglobeandmail.com/globe-investor/investment-ideas/george-soros-says-bitcoin-bubble-wont-have-sharp-break-like-others/article37739168/ 
+55.
+Remember Laszlo, the guy who bought two pizzas in 2010? Well, on February 25, 2018, he did it again, this time using the Lightning Network, a second-layer Bitcoin application designed to enhance network scalability. Given the significant appreciation in Bitcoin's value, Laszlo paid 649,000 satoshis, or 0.00649 bitcoins.
+Interestingly, the commonly shared picture of Laszlo in a red shirt with his two children around a table with two pizzas, often attributed to the 10,000 BTC pizza purchase in 2010, is actually from the Lightning Network transaction in 2018. In the picture, there is a notepad in front of the pizzas with the code "7241 A8C1," which is the first and last four characters of the hex string of the transaction. This code proved he paid the invoice, as a friend from London acted as a middleman, accepting the Lightning payment and facilitating the real purchase with the local pizza shop.
+https://lists.linuxfoundation.org/pipermail/lightning-dev/2018-February/001044.html 
+56.
+On November 26, 2018, Ohio became the first US state to allow taxes to be paid in Bitcoin. At that point, companies in the state were able to pay a variety of taxes, including sales tax, employee withholding tax, and public utilities tax, with BTC.
+https://www.coindesk.com/markets/2018/11/26/ohio-becomes-first-us-state-to-allow-taxes-to-be-paid-in-bitcoin/ 
+57.
+In September 2019, Bitcoin's network hash rate reached a historic milestone of 100 quintillion hashes (100 EH/s). To put that into perspective, the combined hash rate of all 2 billion PCs and 3 billion smartphones in 2019 would be approximately 0.002003 EH/s. Thus, at that time, the Bitcoin network was 50,000 times more powerful than all the PCs and smartphones in the world combined.
+https://cointelegraph.com/news/bitcoin-hash-rate-to-hit-a-whopping-100-quintillion-for-the-first-time 
+58.
+On August 11, 2020, MicroStrategy, the Nasdaq-listed business intelligence company, became the first publicly traded company to buy Bitcoin as part of its capital allocation strategy. The company purchased 21,454 bitcoins and announced its plan to buy Bitcoin as a way to avoid inflation.
+"This investment reflects our belief that Bitcoin, as the world's most widely-adopted cryptocurrency, is a dependable store of value and an attractive investment asset with more long-term appreciation potential than holding cash," said CEO Michael J. Saylor.
+https://www.theblock.co/linked/74534/microstrategy-becomes-first-listed-company-to-buy-bitcoin 
+https://web.archive.org/web/20200918170616/ https://www.microstrategy.com/us/company/press/microstrategy-adopts-bitcoin-as-primary-treasury-reserve-asset 
+59.
+On February 19, 2021, Bitcoin's market cap reached $1 trillion for the first time. It took Bitcoin just 12 years to grow from an academic whitepaper to a $1 trillion decentralized network, becoming the eighth tradable asset to boast a thirteen-figure market cap at that time. By contrast, it took Microsoft 45 years for its capitalization to exceed $1 trillion, Amazon 27 years, and Google to achieve the $1 trillion mark in just 22 years.
+https://cointelegraph.com/news/bitcoin-s-market-cap-breaks-1-trillion-after-tripling-in-three-months 
+60.
+On June 9, 2021, El Salvador became the first country in the world to adopt Bitcoin as legal tender. The Legislative Assembly of El Salvador voted to pass the Bitcoin Law, making Bitcoin a legal form of currency in the country, with a majority vote of 62 out of 84 deputies in favor.
+https://en.wikipedia.org/wiki/Bitcoin_in_El_Salvador 
+ 
+61.
+In January 2022, the government of Kazakhstan removed price caps on liquefied petroleum gas used for car fuel to align with market conditions, causing the price to double overnight and sparking violent protests across the country. In response, the state-owned Kazakhtelecom, in a totalitarian decision, shut down the nation's internet. This shutdown significantly impacted major Bitcoin mining pools in the region.
+A comparison of mining pool hash rates from half a day before the internet shutdown and after indicated a decline in rates for several mining pools. According to data compiled by YCharts.com, the Bitcoin network's overall hash rate declined by 13.4% in the hours following the shutdown, dropping from about 205,000 Peta hash per second (PH/s) to 177,330 PH/s. Kazakhstan accounts for 18% of the Bitcoin network's hash activity.
+https://cointelegraph.com/news/kazakh-government-resigns-shuts-down-internet-amid-protests-causing-bitcoin-network-hash-rate-to-tumble-13-4 
+https://www.theblock.co/post/129312/bitcoin-mining-pool-hashrates-fall-amid-kazakhstan-internet-shutdown 
+62.
+On April 27, 2022, The Central African Republic (CAR) became the second country to approve Bitcoin as legal tender.
+https://www.reuters.com/world/africa/central-african-republic-adopts-bitcoin-an-official-currency-2022-04-27/ 
+63.
+On April 29, 2022, Goldman Sachs offered its first Bitcoin-backed loan. This financial product allows Bitcoin owners to borrow fiat currency, such as the US dollar, by pledging their BTC as collateral to the bank. The underlying volatility of Bitcoin can make these loans risky. If the price of Bitcoin drops significantly, borrowers may be required to increase their collateral to maintain the loan, otherwise, they risk getting liquidated.
+https://cointelegraph.com/news/goldman-sachs-offers-first-bitcoin-backed-loan-as-wall-street-embraces-crypto 
+https://bitmarkets.com/en/insights/article/goldman-sachs-offered-first-bitcoin-backed-loan 
+64.
+On November 23rd, 2023, some users accidentally submitted 83 BTC as a gas fee. The sender's wallet was set up just minutes before the transfer, and the recipient received only 55.78 BTC of the original 139.42 BTC that was sent.
+In an announcement made days after the incident, Antpool, the Bitcoin mining firm that mined block 818087 containing the transaction, stated it would refund the 83 BTC to the user. Antpool explained that its risk control system had temporarily frozen the amount when packaging the transaction.
+Curiously, this was not the biggest fee ever paid in a transaction. In Bitcoin terms, the largest fee was paid in 2016 when someone accidentally sent 291 BTC in transaction fees.
+https://cointelegraph.com/news/bitcoin-user-pays-3-1m-in-transition-fee-for-one-139-btc-transfer 
+https://www.theblock.co/post/265387/antpool-agrees-to-refund-record-3-million-bitcoin-transaction-fee 
+https://mempool.space/tx/cc455ae816e6cdafdb58d54e35d4f46d860047458eacf1c7405dc634631c570d 
+65.
+On January 10, 2024, The U.S. Securities and Exchange Commission (SEC) approved its first batch of Bitcoin spot ETFs, including applications from major firms like BlackRock. The approval came after years of debate and legal challenges. This move allows institutional investors to gain direct exposure to Bitcoin without needing to trade futures, potentially attracting significant institutional money into the market. These ETFs hold Bitcoin as their underlying asset, allowing investors to trade shares that represent the price of Bitcoin without having to directly manage it.
+https://www.sec.gov/news/statement/gensler-statement-spot-bitcoin-011023 
