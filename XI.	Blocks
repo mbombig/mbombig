@@ -1,0 +1,79 @@
+To understand how blocks work, we need to remember that a transaction is a message to the network saying from which addresses the funds will be used to be transferred to which address, and the value of that transaction. Also remember that if the sum of the values of the input addresses is greater than the quantity you wish to send, you will need to indicate the sender's address so that the change can be sent.
+What aggregates all this information and submits it to the network is an application we call a wallet. We will soon understand how they work. But for now, it's enough to know that the user just needs to choose the amount they want to transfer, and the recipient's address, and under the hood, the wallet takes care of the rest.
+When you submit a transaction from a wallet, the wallet is connected to a network node, which in turn is connected to other network nodes.
+The Bitcoin network was designed for transactions and blocks to be broadcast throughout the network, ensuring consensus on the new balance status.
+Any Bitcoin node that encounters a valid and previously unseen transaction will promptly relay it to all connected nodes, employing a propagation strategy referred to as flooding. As a result, the transaction spreads throughout the peer-to-peer network, ensuring that it reaches a substantial number of nodes in just a few seconds.
+Once a transaction is created and sent to the Bitcoin network, it does not become part of the blockchain until it is verified and included in a block by a process called mining, which we will understand later.
+Transactions that become part of a block and are added to the blockchain are considered "confirmed," which allows the new owners of bitcoin to spend the bitcoin they received in those transactions.
+Blockchain is a structure of chained blocks that contain transactions. Just like a bakery ledger whose structure is made up of sequentially numbered pages that contain the sales made on each page.
+Blocks are interconnected in reverse, with each one pointing back to its immediate predecessor in the chain. Frequently, people picture the blockchain as a vertical pile, where blocks are placed one atop another, and the first block (Genesis Block) forms the base of this pile. This stacked arrangement leads to the adoption of terminology such as "height" to denote the number of blocks separating a particular block from the initial one, and "top" or "tip" to identify the block that has been most recently added.
+In the bakery's ledger, the pages are sequential, so it's easy to figure out which page is linked to the previous one.
+In the case of Bitcoin blocks, it is a little more complicated.
+Each block has its ID. This ID is a hash generated using the SHA 256 cryptographic model (we already understand what a hash function is and how it works).
+Each block ID has a reference to the hash of the previous block in its header. Thereupon, each block is linked to its predecessor going backward in the blockchain to the first block (genesis block). So that if the hash of the previous block (parent block) changes, the hash of the current block will change too!
+The hash of block 5, for example, is composed of the hash of block 4 and another random number.
+Therefore, if the content (transactions) of block 4 is changed, the hash of block 4 will change, which will consequently require the "hash of the previous block" component of block 5 to also change, which will consequently change its hash. Therefore, the "hash of the previous block" component of block 6 also changes, changing its hash, and so on.
+This long chain of blocks is what guarantees the immutability of Bitcoin's transaction history.
+But why doesn't a bad actor simply change the transaction history of a block for his benefit?
+Remember that the hash (ID) of each block has a random number? To calculate it, a large computational effort is required (we will understand this better when we talk about mining), which makes it unfeasible both in terms of time and resources used.
+But before we understand mining, let's understand the block better.
+The block consists of a header and a list of transactions.
+The header is made up of three components:
+- Previous Block Hash: A reference to the hash of the previous (parent) block in the chain;
+- Merkle Root: A hash of the root of the Merkle tree of this block's transactions;
+- Nonce: A counter used for the Proof-of-Work algorithm;
+Merkle Root? Nonce? Calm! We will soon understand them.
+The header is made up of more components (version, date/time, difficulty). But just the previous ones are enough to understand the dynamics.
+The combination of the previous block hash, the Merkle root, and the nonce ensures that each block is unique and securely linked to the previous block in the blockchain.
+Here's a simplified example to visualize the dynamics:
+Previous Block Hash: ABC123
+Merkle Root: XYZ789
+Nonce: 42
+Concatenating these values gives us the block header: ABC123XYZ78942.
+The miners would then hash this block header (in reality, the process is more complex and involves double SHA-256 hashing) and try to find a hash value that is less than the target. If the hash is not less than the target, they will increase the nonce and try again. This process repeats until a valid block header hash is found (we will understand better in the mining chapter).
+It's important to note that this is a simplified example and the actual process involves binary data and SHA-256 hashing, but I hope it helps you understand the basic dynamics of how a Bitcoin block header is constructed and how it plays a role in the Proof-of-Work mining process.
+Merkle Root
+To understand Merkle Root, we will need to understand Merkle Trees.
+Each block within the Bitcoin blockchain contains a summary of all its transactions through a Merkle tree.
+A Merkle tree, often referred to as a binary hash tree, serves as a data structure for the efficient summarization and verification of the integrity of extensive data sets. These binary trees are composed of cryptographic hashes. In computer science, the concept of a "tree" denotes a branching data structure, but these trees are typically represented inversely, with the "root" situated at the top and the "leaves" at the bottom in diagrams, as we will demonstrate in subsequent examples.
+Merkle trees are used in Bitcoin to summarize all the transactions in a block, producing an overall digital fingerprint of the entire set of transactions, and providing a very efficient process to verify whether a transaction is included in a block.
+Construction:
+Hash Individual Transactions: Each transaction in a block is hashed using a cryptographic hash function like SHA-256. These hashes form the leaves of the tree.
+Pair and Hash Again: The hashes of the transactions are then paired and hashed together. If there's an odd number of transaction hashes, the last hash is duplicated and hashed with itself to ensure that all nodes have a pair.
+Repeat Until One Hash is Left: This process of pairing and hashing continues upwards in the tree until only one hash is left. This top hash is called the "Merkle Root."
+Example:
+Imagine a block with four transactions, Tx1, Tx2, Tx3, and Tx4.
+Hash Transactions: First, hash each transaction: H(Tx1), H(Tx2), H(Tx3), H(Tx4).
+Create Second Layer: Pair and hash the transaction hashes: H(H(Tx1)+H(Tx2)), H(H(Tx3)+H(Tx4)).
+Merkle Root: Finally, hash the results of the second layer together to get the Merkle Root: H(H(H(Tx1)+H(Tx2)) + H(H(Tx3)+H(Tx4))).
+The hash of all those concatenated results is the Merkle Root and is stored in the block header.
+The Merkle Tree is utilized to efficiently and securely summarize all the transactions within a block. Irrespective of the number of transactions a block contains, be it a handful or thousands, the final Merkle Root derived from this tree will always be of a fixed size, specifically 32 bytes.
+This consistency in size is achieved through the process of cryptographic hashing.
+Each transaction is initially hashed, producing a fixed-size output, and these hashes are then paired, concatenated, and hashed again in successive layers of the tree. This process is repeated until a single hash remains, the Merkle Root. The nature of the cryptographic hash function ensures that the output is always of the same length, thus maintaining a uniform 32-byte size for the Merkle Root regardless of the quantity or size of the transactions in the block. 
+This fixed-size Merkle Root is a critical feature, as it simplifies the block header's structure and ensures the scalability and efficiency of the blockchain, making it easier to verify transaction inclusion without requiring the entire transaction list.
+But, how a node can verify that a specific transaction is included in a block, especially when it only downloads the block headers and retrieves a small Merkle path from a full node?
+Light nodes don't have all transactions because they don't download full blocks, just block headers.
+To verify that a transaction is included in a block, without having to download all the transactions in the block, they use an authentication path or Merkle path.
+If I am going to make a transaction and don't run a full node, how can the light node in my wallet know that a transaction was made in the past and that it resulted in a balance for me and that I therefore have a balance to be sent to someone else?
+When a light node wants to verify if a specific transaction is included in a block, it requests the Merkle path for that transaction from a full node.
+The Merkle path consists of the minimum number of hashes needed to link the transaction to the Merkle Root in the block header.
+The full node provides the light node with the hash of the transaction in question, along with the hashes of other transactions that are paired with it at each layer of the Merkle Tree.
+The light node then recreates the path of hashes, starting from the specific transaction hash up to the Merkle Root.
+The light node compares the recreated Merkle Root with the Merkle Root in the block header.
+If they match, it proves that the transaction is indeed included in that block, without the need for downloading all transaction data.
+In the same example above, the light node can prove transaction D (Tx D) is included in the block with a path provided by a full node.
+The full node will provide the block header (Habcd), and the path: Hc and Hab.
+The light node has the transaction D (Tx d) with the hash pair provided Hc + Hd. It now has a new hash of this pair of transactions, which is Hcd.
+It can now pair this hash with the next one provided, which is Hab (Hab + Hcd).
+The result is Habcd.
+It is easy to compare the final hash with the block header hash. If those match, it means transaction D is part of that block, and therefore a valid transaction in the blockchain.
+Imagine a classroom where two students are attending a lecture. One student, representing a light node, only writes down the table of contents of the lecture, which lists the main topics (akin to the block headers and Merkle Roots in Bitcoin). This student prefers a concise summary rather than detailed notes, saving time and effort.
+The other student, representing a full node, diligently writes down every detail of the lecture, including all examples and discussions (comparable to recording all transactions in a Bitcoin block). This student's notes are comprehensive and contain everything covered in the lecture.
+Now, when the student with just the table of contents needs to verify whether a specific topic (a transaction) was covered in the lecture, she needs to ask the student for the full notes.
+The full-note student then provides a brief path (the Merkle path) from the specific topic back to the table of contents, showing where and how that topic fits into the lecture's overall structure. By following this path, the first student can confidently confirm the inclusion of the topic without having to go through the entire set of detailed notes.
+This analogy helps explain the relationship between light nodes and full nodes in the Bitcoin network. Light nodes, with their limited block header records, can verify the presence of a particular transaction in a block by obtaining and verifying a small part of the information (the Merkle path) from the full nodes. Full nodes maintain a complete record of all transactions.
+Using Merkle trees, a node can efficiently download only the block headers and still verify whether a transaction is included in a block. This is possible by obtaining a concise Merkle path from a full node. This method allows the light node to skip the requirement of storing or transmitting the entire blockchain, which can be several gigabytes in size. Light nodes use these Merkle paths to authenticate transactions without needing to download full blocks.
+https://en.bitcoin.it/wiki/Block 
+Tschorsch, F., & Vogels, B. (2016). Bitcoin and Blockchain Security
+Andreas M. Antonopoulos - Mastering Bitcoin
+Kalle Rosenbaum - Grokking Bitcoin
