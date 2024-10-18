@@ -1,0 +1,24 @@
+If miners receive rewards in bitcoins for creating blocks, and any node is free to mine, what stops the network from continuously mining and creating an excessive number of bitcoins? How does the Bitcoin system control the issuance of bitcoins?
+The concept of 'mining' in the Bitcoin ecosystem is aptly named, as it draws a parallel with the extraction of precious metals like gold. This analogy extends to the reward structure designed by Satoshi, which is characterized by diminishing returns over time.
+Initially, to incentivize participation and bootstrap the network, the rewards for mining a block were set high. In 2009, when Bitcoin was first launched, the reward for mining a single block was 50 bitcoins. This substantial reward was aimed at attracting early adopters, encouraging them to contribute their computing power to maintain and secure the network.
+However, Satoshi envisioned a system where this reward wouldn't remain constant. The protocol includes a mechanism known as 'halving', which is fundamental to Bitcoin's monetary policy. Approximately every four years, or after every 210,000 blocks mined, the reward for mining a new block is halved. As a result, the issuance of new bitcoins gradually slows down over time. This halving process has already occurred several times since Bitcoin's inception, with the block reward decreasing from 50 bitcoins to 25, then to 12.5, then to 6.25, and most recently to 3.125 bitcoins per block.
+The reason for this diminishing reward structure is twofold:
+Controlled Supply: It ensures a controlled and limited supply of bitcoins. By design, there will only ever be 21 million bitcoins in existence. This finite supply mimics the scarcity of precious metals and contrasts with fiat currencies, which can be printed in unlimited quantities by central banks.
+Network Maturity: As the Bitcoin network matures and becomes more robust, the need for large block rewards diminishes. The expectation is that as Bitcoin becomes more widely adopted, transaction volumes will increase, and the transaction fees alone will be sufficient to incentivize miners to continue validating and securing the network.
+Through this innovative approach, Bitcoin introduces a deflationary model where the issuance of new coins slows down over time, adding a layer of predictability and stability to its monetary policy.
+Like many others, you might be curious about why the Bitcoin system is designed to have a maximum of 21 million bitcoins. Why precisely 21 million? Why not 20 million, or 22 million? Satoshi didn't explicitly state the reasoning behind this specific figure in any of his writings or communications, leaving room for speculation and analysis.
+To understand the logic that leads to the 21 million cap, we need to look at the key parameters Satoshi set for Bitcoin:
+Block Creation Interval: Satoshi designed the system such that new blocks are created approximately every 10 minutes.
+Initial Block Reward: The initial reward for mining a new block was set at 50 bitcoins.
+Halving Interval: Satoshi implemented a halving event every 210,000 blocks, roughly every four years, during which the block reward is halved.
+When we crunch the numbers based on these parameters, an interesting picture emerges. Starting with a 50-bitcoin reward, which halves every 210,000 blocks, the total number of bitcoins that will ever be created closely approaches 21 million.
+Here's a simplified breakdown:
+The first 210,000 blocks yield 50 bitcoins per block, totaling 10.5 million bitcoins.
+The next 210,000 blocks yield 25 bitcoins per block (after the first halving), totaling 5.25 million bitcoins, and so on.
+The sum of this series is a finite number due to the halving process, which is a geometric series. As the reward halves with each successive set of 210,000 blocks, the total number of bitcoins approaches 21 million but never quite reaches it. The system is designed to reach this limit around the year 2140.
+Thus, the 21 million cap appears to be a consequence of the initial parameters set by Satoshi. It's a deliberate design choice that introduces scarcity to the digital realm, much like precious metals in the physical world. This scarcity is a fundamental aspect of Bitcoin's value proposition, distinguishing it from fiat currencies that can be printed without limit. It's this feature that has led many to view Bitcoin as 'digital gold', a store of value in the digital age.
+What can monetary policy tell us about Bitcoin? Marcin Pietrzak - https://link.springer.com/article/10.1007/s10436-023-00432-3 
+Bitcoin in the economics and finance literature: a survey - Parthajit Kayal - https://link.springer.com/article/10.1007/s43546-021-00090-5 
+https://www.bitcoin.com/satoshi-archive/emails/mike-hearn/1/ 
+Andreas M. Antonopoulos - Mastering Bitcoin
+Kalle Rosenbaum - Grokking Bitcoin
