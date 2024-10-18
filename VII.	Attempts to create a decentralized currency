@@ -1,0 +1,48 @@
+Before the creation of Bitcoin, cypherpunks, activists, and computer scientists had been working on projects to create a digital currency that would be immune to the coercive power of the state and financial institutions. These pioneers believed that a decentralized currency system could offer greater privacy, security, and freedom for users.
+The following is a list of some of these projects, each of which made important contributions to the development of decentralized currency systems. It is not a complete list, but it provides an overview of some of the key predecessors to Bitcoin.
+eCash
+The concept of anonymous electronic money was introduced by David Chaum in a paper titled "Blind signatures for untraceable payments" (1) released in 1983. 
+It was one of the initial attempts to develop a system that used cryptography to safeguard the users' financial privacy.
+Without opening an account with the merchant or providing credit card information, the user could use the virtual currency at any store that accepts eCash. Public key digital signature techniques provided security.
+Chaum founded DigiCash in 1989 to market his creation.
+The company went out of business in 1998 despite having been tested at a bank in the US and some in Europe.
+eCash suffered from the problem of centralization: if money is issued by a central authority, then there is a single point of failure.
+It became clear that the lack of a central entity would be one of the challenges in creating this new form of digital money.
+In the absence of a centralized governing body, the question arises as to how scarcity can be managed. On the internet, any digital asset can be effortlessly replicated and disseminated across the network, which poses a significant challenge to controlling and regulating the distribution of limited resources.
+Hashcash
+In the late 1990s, the internet was facing a growing problem: email spam. At the time, there was no effective way to prevent spammers from inundating people's inboxes with unwanted messages.
+Adam Back stepped up with a ground-breaking solution: proof-of-work.
+In 1997, Back introduced the idea of using computational power to create digital scarcity, which would make it prohibitively expensive for spammers to send mass emails. He outlined his ideas in a paper called "Hashcash - A Denial of Service Counter-Measure" (2), which was later published in 2002.
+Proof-of-work is based on the simple idea that a computer must expend energy to solve a complex problem to generate a unique digital token or hash. This hash serves as proof that the computer performed the required work to generate it. While verifying the hash's authenticity is simple and inexpensive, creating it requires significant computational effort.
+An analogy is those padlocks that need a sequence of numbers to open. There is no mathematical formula that, if solved, provides the sequence. Therefore, the only way to open the lock is to test all possible sequences, which requires effort, time, and money. But once discovered, anyone can verify that it is valid.
+Under Back's proposal, email senders would be required to attach a unique hash to each email they send. The cost of creating each hash would be negligible (for example, a hundredth of a penny) but the cumulative cost of sending millions of spam emails would quickly become prohibitive. This would effectively prevent spammers from inundating people's inboxes with unwanted messages.
+While Hashcash was not commercially successful, proof-of-work became a crucial mechanism for enabling coordination among untrusted parties in decentralized systems.
+b-money
+In 1998 with the publication of "b-money, an anonymous, distributed electronic cash system" (3), Wei Dai proposed a system that addressed the critical flaw of Chaum's eCash: Its centralization.
+Dai's system was based on the idea of a distributed ledger, where each participant in the network would maintain their copy of the ledger, which would contain information about how much money each participant currently had.
+It eliminated the need for a central authority to maintain the system, which made it more resistant to state coercion or other forms of censorship. Additionally, it allowed for greater privacy and anonymity, as each participant could maintain their copy of the ledger and there was no centralized repository of transaction data.
+Despite its many advantages, Dai's system was never implemented. However, it laid the groundwork for some of the decentralized electronic cash systems that would follow.
+Bit Gold
+Also in 1998, Nick Szabo designed another system for digital money known as Bit Gold (4).
+At the heart of Bit Gold was a new idea: the concept of being "verifiably expensive" to produce. This meant that users of the system could mint new tokens by providing a hash that was so costly to produce that it acted as a limiting factor on the increase in the money supply. This hash would be verified by a distributed ledger, similar to Wei Dai's b-money system.
+However, Bit Gold faced several challenges that prevented it from becoming a reality. One of the main challenges was the issue of fungibility. As computers continued to improve in processing power, it became easier to produce a hash that had been produced in the past.
+This meant that hashes produced at different points in time would not be equivalent in perceived value, which would break an important property of money known as fungibility. In other words, the digital assets created by Bit Gold would be more like diamonds, with irregular shapes and qualities that were not easily interchangeable with each other, rather than like gold, which is uniform and easily exchangeable.
+An analogy here is the following: imagine having a record of how much money each person has at a given moment, which has been validated by the majority of the network. This record is then kept in a safe with one of those padlocks that need a sequence of numbers to open. After a few transactions, the record is updated and needs to be stored again in another safe with that padlock. However, as the network of participants grows, a group could go to the first vault, test all possible combinations, open the lock, and change the balances of the participants.
+What later solved this problem was a chain of blocks mechanism.
+In a chain of blocks mechanism, the first safe would be stored inside the second safe, the second inside the third, and so on.
+Therefore, if the group wanted to change the balances of the first register, it would have to open all the vaults that are guarding the first one, which would require a lot of time and effort.
+RPOW
+In 2004 it was Hal Finney's turn.
+He designed a system known as RPOW (5) (Reusable Proofs of Work). RPOW was a simplified version of Szabo's Bit Gold, but with a key difference: Finney was able to create a working prototype of his system.
+Despite this achievement, RPOW faced a significant problem that had plagued earlier digital currencies: centralization. Like Chaum's eCash, RPOW relied on a central authority to maintain the ledger of transactions. To address this issue, Finney tried to replace the central authority with an untameable hardware device. While this hardware device would be more trustworthy than a company that could be coerced, it still posed a vulnerability. If the hardware device were turned off, the entire system would be compromised.
+It seemed almost impossible to create a decentralized payment system.
+Until, on October 31, 2008, the following message was posted on a cryptography mailing list under the pseudonym Satoshi Nakamoto:
+"I've been working on a new electronic cash system that's fully peer-to-peer, with no trusted third party…"
+(Foto da mensagem de 31 de outubro)
+References:
+https://sceweb.sce.uhcl.edu/yang/teaching/csci5234WebSecurityFall2011/Chaum-blind-signatures.PDF 
+http://www.hashcash.org/papers/hashcash.pdf 
+http://www.weidai.com/bmoney.txt 
+https://unenumerated.blogspot.com/2005/12/bit-gold.html 
+https://cryptome.org/rpow.htm 
+https://exame.com/future-of-money/bitcoin-nao-foi-o-primeiro-as-moedas-digitais-descentralizadas-anteriores-ao-btc/ 
